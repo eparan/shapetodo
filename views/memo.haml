@@ -1,0 +1,11 @@
+%div#page{"style" => "width:2000px;height:2000px;"} 
+%script#memoTemplate{"type" => "text/template"}
+  <memo style="position:absolute;padding:10px;left:<%= x %>px;top:<%= y %>px;width:<%= width %>px;height:<%= height %>px;background-color:<%= color %>;z-index:<%= z %>;">
+  %div.shape{"contenteditable"=>"true"} <%= body %> 
+  %div.control.drag.hide/
+  %div.control.delete.hide/
+  %div.control.change-color.hide/
+  %div.control.resize.hide/
+  </memo>
+
+

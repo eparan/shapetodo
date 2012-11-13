@@ -1,0 +1,23 @@
+!!!5
+%head
+  %meta{'charset' => 'utf-8'}/
+  %title=title
+  %meta{'name' => 'description', 'content' => ''}/
+  %meta{'name' => 'author', 'content' => 'ged'}/
+  %meta{'name' => 'viewpoint', 'content' => 'width=device-width,initial-scale=1'}/
+
+  / CSS concatenated and minified via ant build script
+  %link{'rel' => 'stylesheet', 'href' => 'css/memo.css'}/
+  / end CSS
+
+  %script{'src' => 'js/libs/modernizr-2.0.6.min.js'}
+
+%body
+  = yield
+  /! end of #conatainer
+
+%script{'src' => 'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js'}
+%script{'src' => 'http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js'}
+%script{'src' => 'http://cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.2/backbone-min.js'}
+%script{'src' => 'http://cdnjs.cloudflare.com/ajax/libs/json2/20110223/json2.js'}
+%script{'defer' => true, 'src' => 'js/app.js'}
